@@ -16,7 +16,7 @@ const Recipe = ({ label, cal, Image, ingredients }) => {
               <h5>ingredients are:-</h5>
               <ol>
                 {ingredients.map((items) => {
-                  return <li>{items.text}</li>;
+                  return <li key={items.text}>{items.text}</li>;
                 })}
               </ol>
             </Card>
